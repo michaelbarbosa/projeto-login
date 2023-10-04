@@ -1,37 +1,17 @@
 @charset "UTF-8";
 
-:root {
-    --cor1:#D9B282;
-    --cor2:#D99F59;
-    --cor3:#A66D3C;
-    --cor4:#5A6473;
-    --cor5:#151B26;
-}
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image:linear-gradient(to bottom, black, #704622);
         
     }
 
-    #mundo {
-        display: block;
-        width: 90%;
-        color: #b1830e;
-        margin: auto;
-        text-align: center;
-        font-size: 5em;
-        padding-top: 10px;
-        text-shadow: 3px 1px 7px rgba(0, 0, 0, 0.658) ;
-    }
-
-    section#login {
+    #login {
         width: 80vw;
-        height: 380px;
-        
+        height: 380px;  
     }
 
-    section#login > div#imagem {
+    #login > #imagem {
         float: left;
         width: 40%;
         height: 100%;
@@ -41,7 +21,7 @@
         float: right;
         width: 60%;
     }
-    
+
     div#formulario form {
         padding-top: 20px;
         width: 90%;
@@ -62,24 +42,23 @@
         
     }
 
-
-}
-
-@media screen and (min-width: 992px) {
-    body {
-        background-image:linear-gradient(to bottom, black, #704622);
-    }
-
     #mundo {
         display: block;
         width: 90%;
         color: #b1830e;
         margin: auto;
         text-align: center;
-        font-size: 6em;
+        font-size: 5em;
         padding-top: 10px;
-        padding-bottom: 20px;
-        text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.658) ;
+        text-shadow: 3px 1px 7px rgba(0, 0, 0, 0.658) ;
+    }
+}
+
+/* ----------------------------------------- */
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image:linear-gradient(to bottom, black, #704622);
     }
 
     section#login {
@@ -111,5 +90,17 @@
         width: 90%;
         padding-top: 60px;
         
+    }
+
+    #mundo {
+        display: block;
+        width: 90%;
+        color: #b1830e;
+        margin: auto;
+        text-align: center;
+        font-size: 6em;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.658) ;
     }
 }
