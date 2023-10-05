@@ -2,13 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-:root {
-    --cor1:#D9B282;
-    --cor2:#D99F59;
-    --cor3:#ce8646;
-}
-
 * {
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -16,13 +9,13 @@
     box-sizing: border-box;
 }
 
-body, html {
-    background-color: var(--cor2);
+body,html {
+    background-image: linear-gradient(to top, #381c05, #b66019, #381c05);
     height: 100vh;
     width: 100vw;
 }
 
-main{
+main {
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -33,14 +26,17 @@ main{
     top: 50%;
     left: 50%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: #00000075;
     width: 350px;
-    height: 515px;
-    border-radius: 40px 0px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.425);
+    height: 500px;
+    border-radius: 15px 0px;
+    box-shadow: 5px 5px 12px #00000081;
     transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    border-top: 2px solid #ffffff75;
+    border-left: 2px solid #ffffff75;
+    backdrop-filter: blur(4px);
 }
 
 #login #imagem {
@@ -63,11 +59,11 @@ main{
     margin-bottom: 10px;
     color: #b1830e;
     font-size: 2em;
-    text-shadow: 3px 1px 7px rgba(0, 0, 0, 0.658) ;
+    text-shadow: 3px 1px 7px rgba(0, 0, 0, 0.658);
     border-bottom: 2px solid #b1830e;
 }
 
-#imagem  p {
+#imagem p {
     font-size: 1em;
     color: white;
     text-align: center;
@@ -87,23 +83,23 @@ form .campo {
     border: none;
     outline: none;
     border-bottom: 2px solid rgb(255, 255, 255);
-    
+
 }
 
-form  label {
+form label {
     display: none;
 }
 
-.campo > span {
+.campo>span {
     color: white;
     font-size: 2em;
     width: 40px;
     padding: 7px;
-    
-    
+
+
 }
 
-.campo > input {
+.campo>input {
     background-color: transparent;
     font-size: 1em;
     width: calc(100% - 45px);
@@ -114,7 +110,7 @@ form  label {
     transform: translateY(-8px);
 }
 
-.campo > input:focus-within {
+.campo>input:focus-within {
     background: transparent;
     border: none;
     outline: none;
@@ -127,60 +123,78 @@ form  label {
     font-weight: bold;
 }
 
-.entrar {
-    margin-top: 30px;
+.check {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #fff;
+    line-height: 40px;
 }
 
-.entrar input[type=submit] {
+.check label {
     display: block;
-    font-size: 1em;
+    font-size: .9em;
+}
+
+.check a {
+    text-decoration: none;
+    color: #fff;
+    font-size: .9em;
+}
+
+.check a:hover {
+    text-decoration: underline;
+}
+
+button {
     width: 100%;
-    height: 40px;
-    background-color: #734322;
-    color: white;
+    height: 38px;
+    background-color: #855227;
     border: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.entrar input[type=submit]:hover {
-    background-color: var(--cor2);
-    cursor: pointer;
-}
-
-.entrar input[type=submit]:active {
-    box-shadow: inset 3px 3px 1px #734322 ;
-    border-radius: 5px;
-    transform: scale(0.95);
-    transition: 0.3s;
-}
-
-.entrar a.botao {
-    display: block;
-    text-align: center;
+    outline: none;
     font-size: 1em;
-    width: 100%;
-    height: 40px;
-    padding-top: 9px;
-    margin-top: 7px;
-    background-color: white;
-    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 22px;
+    color: #fff;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.473);
+
+}
+
+button:hover {
+    border-radius: 22px;
+    background-color: #ce8646;
+    transform: scale(1.01);
+    transition: 0.2s;
+    transition: ease;
+}
+
+button:active {
+    border-left: 2px solid #b1830e;
+    border-top: 2px solid #b1830e;
+    box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.384);
+    transform: scale(0.99);
+    transition: 0.3;
+}
+
+.sign-up {
+    padding-top: 10px;
+    display: flex;
+    font-size: .9em;
+
+}
+
+.sign-up a {
     text-decoration: none;
     color: #b1830e;
-    cursor: pointer;
+    padding-left: 20px;
 }
 
-.entrar a.botao > span {
-    font-size: 0.8em;  
+.sign-up p {
+    color: #fff;
 }
 
-.entrar a.botao:hover {
-    background-color: var(--cor2);
-    color: white;
+a:hover {
+    text-decoration: underline;
+    color: #b8860b;
     font-weight: bold;
-}
-
-.entrar a.botao:active {
-    transform: scale(0.95);
-    transition: 0.3s;
 }
